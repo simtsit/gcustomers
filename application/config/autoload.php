@@ -111,8 +111,8 @@ $autoload['language'] = array();
 
 $autoload['model'] = array(
 	'user',			// loads all users
-	'customers',	// loads all customers
-	'companies',	// loads all customers
+	'customer',		// loads all customers
+	'company',		// loads all customers
 	);
 
 

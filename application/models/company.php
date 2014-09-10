@@ -33,9 +33,4 @@ public function edit_company(){} //coming soon
 public function update_company(){} //coming soon
 
 
-
-
 }
-
-
-?>

@@ -32,6 +32,4 @@ public function create_customer(){} //coming soon
 public function edit_customer(){} //coming soon
 public function update_customer(){} //coming soon
 
-
-
-?>
+}  

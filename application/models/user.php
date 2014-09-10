@@ -53,31 +53,31 @@ public function get_user_details($username){
    return $this->db->get('users')->result_array();
 }
 
- public function all_users() {   
+public function all_users() {   
    $this->db->where(array('active'=>1));
    return $this->db->get('users')->result_array();
- }
+}
 
- public function all_user_names() {
+
+public function all_user_names() {
    $this->db->where(array('active'=>1));
    $this->db->select('id, username');
    return $this->db->get('users')->result_array();
- }
+}
 
 
- public function get_user($username){
+public function get_user($username){
    $this->db->where(array('active'=>1));
    $this->db->where('username',$username);
    return $this->db->get('users')->result_array();
  }
  
-
- public function get_user_id($username){
+public function get_user_id($username){
    $this->db->select('id');
    $this->db->from('users');
    $this->db->where('users.username',$username);
    return $this->db->get('users')->result_array();
- }
+}
 
 }
 

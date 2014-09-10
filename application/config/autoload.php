@@ -110,8 +110,9 @@ $autoload['language'] = array();
 */
 
 $autoload['model'] = array(
-	'user',			// loads all tasks
-
+	'user',			// loads all users
+	'customers',	// loads all customers
+	'companies',	// loads all customers
 	);
 
 

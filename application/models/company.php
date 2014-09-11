@@ -27,8 +27,23 @@ public function get_companies_by_city($customercity){
    return $this->db->get('companies')->result_array();
 }
 
-public function add_company(){} //coming soon
-public function create_company(){} //coming soon
+public function add_company($companyinfo) {
+$this->load->database();
+$companydetails = array(
+'status' => $companyinfo['status'],
+'codename' => $companyinfo['codename'],
+'name' => $companyinfo['name'],
+'city' => $companyinfo['city'],
+'address' => $companyinfo['address'],
+'tel1'=> $companyinfo['tel1'],
+'tel2'=> $companyinfo['tel2'],
+'fax'=> $companyinfo['fax'],
+'vat'=> $companyinfo['vat'],
+'active'=> 1
+);
+$this->db->insert('companies',$companydetails);
+}
+
 public function edit_company(){} //coming soon
 public function update_company(){} //coming soon
 

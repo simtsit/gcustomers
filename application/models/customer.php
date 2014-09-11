@@ -6,7 +6,7 @@ Class Customer extends CI_Model
 
 public function all_customers(){
    $this->db->where(array('active'=>1));
-   return $thid->db->get('customers')->result_array();
+   return $this->db->get('customers')->result_array();
 }
 
 public function get_customer_by_username($username){

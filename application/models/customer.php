@@ -27,8 +27,27 @@ public function get_customers_by_city($customercity){
    return $this->db->get('customers')->result_array();
 }
 
-public function add_customer(){} //coming soon
-public function create_customer(){} //coming soon
+public function add_customer($customerinfo) {
+$this->load->database();
+$customerdetails = array(
+'username' => $customerinfo['username'],
+'firstname' => $customerinfo['firstname'],
+'lastname' => $customerinfo['lastname'],
+'middlename' => $customerinfo['middlename'],
+'birthdate' => $customerinfo['birthdate'],
+'city' => $customerinfo['city'],
+'address' => $customerinfo['address'],
+'tel1'=> $customerinfo['tel1'],
+'tel2'=> $customerinfo['tel2'],
+'fax'=> $customerinfo['fax'],
+'proffession'=> $customerinfo['proffession'],
+'vat'=> $customerinfo['vat'],
+'status' => $customerinfo['status'],
+'active'=> 1
+);
+$this->db->insert('customers',$customerdetails);
+}
+
 public function edit_customer(){} //coming soon
 public function update_customer(){} //coming soon
 

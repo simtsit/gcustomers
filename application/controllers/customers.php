@@ -52,5 +52,5 @@ class Customers extends CI_Controller {
 	}
 }
 
-/* End of file dashboard.php */
-/* Location: ./application/controllers/dashboard.php */
+/* End of file customers.php */
+/* Location: ./application/controllers/customers.php */

@@ -12,11 +12,9 @@
 				<table>
 					<tr>
 						<th>id</th>
-						<th>username</th>
 						<th>first name</th>
 						<th>last name</th>
 						<th>middle name</th>
-						<th>birthdate</th>
 						<th>city</th>
 						<th>address</th>
 						<th>tel1</th>
@@ -27,8 +25,6 @@
 						<th>status</th>
 						<th>Email</th>
 						<th>Website</th>
-						<th>Facebook</th>
-						<th>Twitter</th>
 						<th>Gender</th>						
 					</tr>
 
@@ -37,11 +33,21 @@
 					foreach($customers as $customer){
 						echo '<tr>';
 						echo '<td>' . $customer['id'] . '</td>';
-						echo '<td>' . $customer['username'] . '</td>';
-						echo '<td>' . $customer['firstname'] . '</td>';
-						echo '<td>' . $customer['lastname'] . '</td>';
-						echo '<td>' . $customer['middlename'] . '</td>';
-						echo '<td>' . $customer['birthdate'] . '</td>';
+						echo '<td>';
+						echo '<a href="' . base_url() . 'customers/profile/' . $customer['id'] . '">';
+						echo $customer['firstname'];
+						echo '</a>';
+						echo '</td>';
+						echo '<td>';
+						echo '<a href="' . base_url() . 'customers/profile/' . $customer['id'] . '">';
+						echo $customer['lastname'];
+						echo '</a>';
+						echo '</td>';
+						echo '<td>';
+						echo '<a href="' . base_url() . 'customers/profile/' . $customer['id'] . '">';
+						echo $customer['middlename'];
+						echo '</a>';
+						echo '</td>';
 						echo '<td>' . $customer['city'] . '</td>';
 						echo '<td>' . $customer['address'] . '</td>';
 						echo '<td>' . $customer['tel1'] . '</td>';
@@ -52,8 +58,6 @@
 						echo '<td>' . $customer['status'] . '</td>';
 						echo '<td>' . $customer['email'] . '</td>';
 						echo '<td>' . $customer['website'] . '</td>';
-						echo '<td>' . $customer['facebook'] . '</td>';
-						echo '<td>' . $customer['twitter'] . '</td>';
 						echo '<td>' . $customer['gender'] . '</td>';							
 						echo '</tr>';
 					}

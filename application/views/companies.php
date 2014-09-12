@@ -20,8 +20,6 @@
 						<th>vat</th>
 						<th>Email</th>
 						<th>Website</th>
-						<th>Facebook</th>
-						<th>Twitter</th>
 					</tr>
 					<?php
 						foreach($companies as $company){
@@ -29,7 +27,11 @@
 							echo '<td>' . $company['id'] . '</td>';
 							echo '<td>' . $company['status'] . '</td>';
 							echo '<td>' . $company['codename'] . '</td>';
-							echo '<td>' . $company['name'] . '</td>';
+							echo '<td>';
+							echo '<a href="' . base_url() . 'companies/profile/' . $company['id'] . '">';
+							echo $company['name'];
+							echo '</a>';
+							echo '</td>';
 							echo '<td>' . $company['city'] . '</td>';
 							echo '<td>' . $company['address'] . '</td>';
 							echo '<td>' . $company['tel1'] . '</td>';
@@ -38,8 +40,6 @@
 							echo '<td>' . $company['vat'] . '</td>';
 							echo '<td>' . $company['email'] . '</td>';
 							echo '<td>' . $company['website'] . '</td>';
-							echo '<td>' . $company['facebook'] . '</td>';
-							echo '<td>' . $company['twitter'] . '</td>';						
 							echo '</tr>';
 						}
 					?>

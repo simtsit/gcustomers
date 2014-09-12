@@ -8,6 +8,12 @@ public function all_companies(){
    return $this->db->get('companies')->result_array();
 }
 
+public function get_company_by_id($companyid){
+   $this->db->where(array('active'=>1));
+   $this->db->where('id', $companyid);
+   return $this->db->get('companies')->result_array();
+}
+
 public function get_company_by_codename($username){
    $this->db->where(array('active'=>1));
    $this->db->where('codename',$codename);

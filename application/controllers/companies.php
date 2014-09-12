@@ -43,6 +43,18 @@ class Companies extends CI_Controller {
 		$this->load->view('add_company_form', $data);
 	}
 
+	public function profile($companyid='')	{
+		$data['title'] = 'Companies';
+		$data['active'] = 'Companies';	
+
+		$data['active_user'] = $this->user->active_user_details($_SESSION['username']);
+		
+		$data['companies'] = $this->company->get_company_by_id($companyid);
+		
+		$this->load->view('display_company_profile', $data);
+	}
+
+
 
 
 }

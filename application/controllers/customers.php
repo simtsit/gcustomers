@@ -58,6 +58,21 @@ class Customers extends CI_Controller {
 		$this->load->view('add_customer_form', $data);
 	}
 
+
+	public function profile($customerid=''){
+
+		
+		$data['title'] = 'Customer Profile';
+		$data['active'] = 'Customers';
+
+		$data['active_user'] = $this->user->active_user_details($_SESSION['username']);
+
+		$data['customers'] = $this->customer->get_customer_by_id($customerid);
+		
+		$this->load->view('display_customer_profile',$data);
+	}
+
+
 }
 
 /* End of file customers.php */

@@ -3,10 +3,9 @@ Class Company extends CI_Model
 {
 
 
-
 public function all_companies(){
    $this->db->where(array('active'=>1));
-   return $thid->db->get('companies')->result_array();
+   return $this->db->get('companies')->result_array();
 }
 
 public function get_company_by_codename($username){
@@ -21,7 +20,7 @@ public function get_company_by_vat($vatnumber){
    return $this->db->get('companies')->result_array();
 }
 
-public function get_companies_by_city($customercity){
+public function get_companies_by_city($companycity){
    $this->db->where(array('active'=>1));
    $this->db->where('city',$companycity);
    return $this->db->get('companies')->result_array();

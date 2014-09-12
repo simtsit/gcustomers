@@ -13,13 +13,11 @@ class Dashboard extends CI_Controller {
 *  If not, it redirects user to login page.
 *
 */
-	public function __construct ()
-	{
+	public function __construct () {
 		session_start();
 		parent::__construct();
 
-		if (!isset($_SESSION['username']))
-		{
+		if (!isset($_SESSION['username'])) {
 			redirect('login');
 		}
 	}
@@ -33,12 +31,9 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
 
-
-		 function __construct()
-		 {
+		 function __construct() {
 		   parent::__construct();
 		 }
-		 
 
 		$data['title'] = 'Dashboard';
 		$data['active'] = 'Dashboard';		

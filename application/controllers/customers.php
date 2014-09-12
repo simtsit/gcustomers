@@ -33,13 +33,10 @@ class Customers extends CI_Controller {
 	public function index()
 	{
 
-
-		 function __construct()
-		 {
+		 function __construct() {
 		   parent::__construct();
 		 }
 		 
-
 		$data['title'] = 'Customers';
 		$data['active'] = 'Customers';		
 
@@ -50,6 +47,17 @@ class Customers extends CI_Controller {
 		$this->load->view('customers', $data);
 
 	}
+
+
+	public function create(){
+		$data['title'] = 'Customers';
+		$data['active'] = 'Customers';	
+
+		$data['active_user'] = $this->user->active_user_details($_SESSION['username']);
+				
+		$this->load->view('add_customer_form', $data);
+	}
+
 }
 
 /* End of file customers.php */

@@ -49,8 +49,11 @@
 					}
 					?>
 					</table>
-				
-
+					<div class="center">
+						<form action="<?php echo base_url(); ?>customers/create">
+							<input type="submit" value="Add Customer" class="btn btn-primary">
+						</form>
+					</div>				
 			</div>
 		</div>
 		<!--End Content-->

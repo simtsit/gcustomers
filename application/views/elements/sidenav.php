@@ -11,14 +11,14 @@
 				</li>
 
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle">
+					<a href="<?php echo base_url() . 'charts'; ?>" class="<?php if ($active=='Charts') echo 'active'; ?> ajax-link">
 						<i class="fa fa-bar-chart-o"></i>
 						<span class="hidden-xs">Charts</span>
 					</a>
 				</li>
 
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle">
+					<a href="<?php echo base_url() . 'contacts'; ?>" class="<?php if ($active=='Contacts') echo 'active'; ?> ajax-link">
 						<i class="fa fa-table"></i>
 						<span class="hidden-xs">Contacts</span>
 					</a>
@@ -39,45 +39,53 @@
 				</li>
 
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle">
+					<a href="<?php echo base_url() . 'reports'; ?>" class="<?php if ($active=='Reports') echo 'active'; ?> ajax-link">
 						<i class="fa fa-list"></i>
 						<span class="hidden-xs">Reports</span>
 					</a>
 				</li>
 
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle">
+					<a href="<?php echo base_url() . 'invoices'; ?>" class="<?php if ($active=='Invoices') echo 'active'; ?> ajax-link">
 						<i class="fa fa-map-marker"></i>
 						<span class="hidden-xs">Invoices</span>
 					</a>
 				</li>
 
-				<li>
-					<a class="ajax-link" href="<?php echo base_url(); ?>ajax/calendar.html">
+				<li class="dropdown">
+					<a href="<?php echo base_url() . 'dont_click_this'; ?>" class="<?php if ($active=='Dontclickthis') echo 'active'; ?> ajax-link">
+						<i class="fa fa-picture-o"></i>
+						<span class="hidden-xs">Don't Click Here!</span>
+					</a>
+				</li>
+
+				<li class="dropdown">
+					<a href="<?php echo base_url() . 'calendar'; ?>" class="<?php if ($active=='Calendar') echo 'active'; ?> ajax-link">
 						<i class="fa fa-calendar"></i>
 						<span class="hidden-xs">Calendar</span>
 					</a>
 				</li>
 
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle">
+					<a href="<?php echo base_url() . 'settings'; ?>" class="<?php if ($active=='Settings') echo 'active'; ?> ajax-link">
 						<i class="fa fa-picture-o"></i>
 						<span class="hidden-xs">Settings</span>
 					</a>
 				</li>
 
-				<li>
-					<a class="ajax-link" href="<?php echo base_url(); ?>ajax/typography.html">
+				<li class="dropdown">
+					<a href="<?php echo base_url() . 'history_log'; ?>" class="<?php if ($active=='Historylog') echo 'active'; ?> ajax-link">
 						<i class="fa fa-font"></i>
 						<span class="hidden-xs">History Log</span>
 					</a>
 				</li>
 
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle">
-						<i class="fa fa-picture-o"></i>
-						<span class="hidden-xs">Calendar</span>
+					<a href="<?php echo base_url() .'logout'; ?>" class="dropdown-toggle">
+						<i class="fa fa-off"></i>
+						<span class="hidden-xs">Logout</span>
 					</a>
 				</li>
+
 			</ul>
 		</div>

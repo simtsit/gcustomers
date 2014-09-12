@@ -25,6 +25,11 @@
 						<th>proffession</th>
 						<th>vat</th>
 						<th>status</th>
+						<th>Email</th>
+						<th>Website</th>
+						<th>Facebook</th>
+						<th>Twitter</th>
+						<th>Gender</th>						
 					</tr>
 
 
@@ -45,6 +50,11 @@
 						echo '<td>' . $customer['proffession'] . '</td>';
 						echo '<td>' . $customer['vat'] . '</td>';
 						echo '<td>' . $customer['status'] . '</td>';
+						echo '<td>' . $customer['email'] . '</td>';
+						echo '<td>' . $customer['website'] . '</td>';
+						echo '<td>' . $customer['facebook'] . '</td>';
+						echo '<td>' . $customer['twitter'] . '</td>';
+						echo '<td>' . $customer['gender'] . '</td>';							
 						echo '</tr>';
 					}
 					?>

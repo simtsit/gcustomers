@@ -18,6 +18,10 @@
 						<th>tel2</th>
 						<th>fax</th>
 						<th>vat</th>
+						<th>Email</th>
+						<th>Website</th>
+						<th>Facebook</th>
+						<th>Twitter</th>
 					</tr>
 					<?php
 						foreach($companies as $company){
@@ -32,6 +36,10 @@
 							echo '<td>' . $company['tel2'] . '</td>';
 							echo '<td>' . $company['fax'] . '</td>';
 							echo '<td>' . $company['vat'] . '</td>';
+							echo '<td>' . $company['email'] . '</td>';
+							echo '<td>' . $company['website'] . '</td>';
+							echo '<td>' . $company['facebook'] . '</td>';
+							echo '<td>' . $company['twitter'] . '</td>';						
 							echo '</tr>';
 						}
 					?>

@@ -52,9 +52,7 @@ class Login extends CI_Controller {
 	}
 
 
-
-	public function logout()
-	{
+	public function logout()	{
 		session_destroy();
 		$this->load->view('login');
 	}

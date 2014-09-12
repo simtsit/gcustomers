@@ -31,6 +31,37 @@
 						</div>
 					</div>
 
+
+					<div class="form-group">
+						<label class="control-label col-lg-4">Email</label>
+						<div class=" col-lg-4">
+							<input class="validate[required,custom[email]] form-control" type="text" name="email" id="email" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-4">Website</label>
+						<div class=" col-lg-4">
+							<input class="validate[required,custom[email]] form-control" type="text" name="website" id="website" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-4">Facebook</label>
+						<div class=" col-lg-4">
+							<input class="validate[required,custom[email]] form-control" type="text" name="facebook" id="facebook" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-lg-4">Twitter</label>
+						<div class=" col-lg-4">
+							<input class="validate[required,custom[email]] form-control" type="text" name="twitter" id="twitter" />
+						</div>
+					</div>			
+
+
+
 					<!-- Birthdate -->
 
 					<div class="form-group">

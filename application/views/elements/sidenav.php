@@ -39,10 +39,15 @@
 				</li>
 
 				<li class="dropdown">
-					<a href="<?php echo base_url() . 'reports'; ?>" class="<?php if ($active=='Reports') echo 'active'; ?> ajax-link">
+					<a href="<?php echo base_url() . 'reports'; ?>" class="<?php if ($active=='Reports') echo 'active'; ?> dropdown-toggle">
 						<i class="fa fa-list"></i>
 						<span class="hidden-xs">Reports</span>
 					</a>
+					<ul class="dropdown-menu">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
 				</li>
 
 				<li class="dropdown">
@@ -86,6 +91,20 @@
 						<span class="hidden-xs">Logout</span>
 					</a>
 				</li>
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle">
+						<i class="fa fa-bar-chart-o"></i>
+						<span class="hidden-xs">Charts</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="ajax-link" href="ajax/charts_xcharts.html">xCharts</a></li>
+						<li><a class="ajax-link" href="ajax/charts_flot.html">Flot Charts</a></li>
+						<li><a class="ajax-link" href="ajax/charts_google.html">Google Charts</a></li>
+						<li><a class="ajax-link" href="ajax/charts_morris.html">Morris Charts</a></li>
+						<li><a class="ajax-link" href="ajax/charts_coindesk.html">CoinDesk realtime</a></li>
+					</ul>
+				</li>				
 
 			</ul>
 		</div>

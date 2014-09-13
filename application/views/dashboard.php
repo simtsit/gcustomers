@@ -7,16 +7,14 @@
 		<!--Start Content-->
 		<div id="content" class="col-xs-12 col-sm-10">
 			<div id="ajax-content">
-				<!--Start Breadcrumb-->
-<div class="row">
-	<div id="breadcrumb" class="col-xs-12">
-		<ol class="breadcrumb">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Dashboard</a></li>
-		</ol>
-	</div>
-</div>
-<!--End Breadcrumb-->
+				<!-- Start Header Bar -->
+				<div class="row">
+					<div id="header-bar" class="col-xs-12">
+						<h3><?php echo $title; ?></h3>
+					</div>
+				</div>
+				<!-- End Header Bar -->
+
 <!--Start Dashboard 1-->
 <div id="dashboard-header" class="row">
 	<div class="col-xs-10 col-sm-2">

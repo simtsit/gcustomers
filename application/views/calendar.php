@@ -6,6 +6,13 @@
 			<!--Start Content-->
 			<div id="content" class="col-xs-12 col-sm-10">
 				<div id="ajax-content">
+				<!-- Start Header Bar -->
+				<div class="row">
+					<div id="header-bar" class="col-xs-12">
+						<h3><?php echo $title; ?></h3>
+					</div>
+				</div>
+				<!-- End Header Bar -->					
 					Coming Soon....
 
 				</div>

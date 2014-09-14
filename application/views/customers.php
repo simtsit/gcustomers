@@ -18,14 +18,12 @@
 
 				<table>
 					<tr>
-						<th>id</th>
 						<th>first name</th>
 						<th>last name</th>
 						<th>middle name</th>
 						<th>city</th>
 						<th>address</th>
-						<th>tel1</th>
-						<th>tel2</th>
+						<th>tel</th>
 						<th>fax</th>
 						<th>proffession</th>
 						<th>vat</th>
@@ -39,7 +37,6 @@
 					<?php
 					foreach($customers as $customer){
 						echo '<tr>';
-						echo '<td>' . $customer['id'] . '</td>';
 						echo '<td>';
 						echo '<a href="' . base_url() . 'customers/profile/' . $customer['id'] . '">';
 						echo $customer['firstname'];
@@ -57,15 +54,17 @@
 						echo '</td>';
 						echo '<td>' . $customer['city'] . '</td>';
 						echo '<td>' . $customer['address'] . '</td>';
-						echo '<td>' . $customer['tel1'] . '</td>';
-						echo '<td>' . $customer['tel2'] . '</td>';
+						echo '<td>' . $customer['tel'] . '</td>';
 						echo '<td>' . $customer['fax'] . '</td>';
 						echo '<td>' . $customer['proffession'] . '</td>';
 						echo '<td>' . $customer['vat'] . '</td>';
 						echo '<td>' . $customer['status'] . '</td>';
-						echo '<td>' . $customer['email'] . '</td>';
-						echo '<td>' . $customer['website'] . '</td>';
-						echo '<td>' . $customer['gender'] . '</td>';							
+						echo '<td>';
+						if($customer['gender']==1) echo 'Male';
+							else if($customer['gender']==2) echo 'Female';
+								else  echo 'Not Specified';
+						echo '</td></tr>';
+						echo '</td>';							
 						echo '</tr>';
 					}
 					?>

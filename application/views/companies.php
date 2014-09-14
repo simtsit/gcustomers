@@ -21,12 +21,9 @@
 						<th>name</th>
 						<th>city</th>
 						<th>address</th>
-						<th>tel1</th>
-						<th>tel2</th>
+						<th>tel</th>
 						<th>fax</th>
 						<th>vat</th>
-						<th>Email</th>
-						<th>Website</th>
 					</tr>
 					<?php
 						foreach($companies as $company){
@@ -41,12 +38,9 @@
 							echo '</td>';
 							echo '<td>' . $company['city'] . '</td>';
 							echo '<td>' . $company['address'] . '</td>';
-							echo '<td>' . $company['tel1'] . '</td>';
-							echo '<td>' . $company['tel2'] . '</td>';
+							echo '<td>' . $company['tel'] . '</td>';
 							echo '<td>' . $company['fax'] . '</td>';
 							echo '<td>' . $company['vat'] . '</td>';
-							echo '<td>' . $company['email'] . '</td>';
-							echo '<td>' . $company['website'] . '</td>';
 							echo '</tr>';
 						}
 					?>

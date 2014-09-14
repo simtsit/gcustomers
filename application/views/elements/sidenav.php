@@ -92,7 +92,7 @@
 					</a>
 				</li>
 				
-				<li class="dropdown">
+<!-- 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle">
 						<i class="fa fa-bar-chart-o"></i>
 						<span class="hidden-xs">Charts</span>
@@ -104,7 +104,7 @@
 						<li><a class="ajax-link" href="ajax/charts_morris.html">Morris Charts</a></li>
 						<li><a class="ajax-link" href="ajax/charts_coindesk.html">CoinDesk realtime</a></li>
 					</ul>
-				</li>				
+				</li>	 -->			
 
 			</ul>
 		</div>

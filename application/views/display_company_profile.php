@@ -22,8 +22,7 @@
 							echo '<tr><th>name</th><td>' . $company['name'] . '</td></tr>';
 							echo '<tr><th>city</th><td>' . $company['city'] . '</td></tr>';
 							echo '<tr><th>address</th><td>' . $company['address'] . '</td></tr>';
-							echo '<tr><th>tel1</th><td>' . $company['tel1'] . '</td></tr>';
-							echo '<tr><tr><th>tel2</th><td>' . $company['tel2'] . '</td></tr>';
+							echo '<tr><th>tel1</th><td>' . $company['tel'] . '</td></tr>';
 							echo '<tr><th>fax</th><td>' . $company['fax'] . '</td></tr>';
 							echo '<tr><tr><th>vat</th><td>' . $company['vat'] . '</td></tr>';
 							echo '<tr><th>Email</th><td>' . $company['email'] . '</td></tr>';

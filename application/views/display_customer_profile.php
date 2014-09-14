@@ -27,8 +27,7 @@
 						echo '<tr><th>birthdate</th><td>' . $customer['birthdate'] . '</td></tr>';
 						echo '<tr><th>city</th><td>' . $customer['city'] . '</td></tr>';
 						echo '<tr><th>address</th><td>' . $customer['address'] . '</td></tr>';
-						echo '<tr><th>tel1</th><td>' . $customer['tel1'] . '</td></tr>';
-						echo '<tr><th>tel2</th><td>' . $customer['tel2'] . '</td></tr>';
+						echo '<tr><th>tel1</th><td>' . $customer['tel'] . '</td></tr>';
 						echo '<tr><th>fax</th><td>' . $customer['fax'] . '</td></tr>';
 						echo '<tr><th>proffession</th><td>' . $customer['proffession'] . '</td></tr>';
 						echo '<tr><th>vat</th><td>' . $customer['vat'] . '</td></tr>';
@@ -37,7 +36,11 @@
 						echo '<tr><th>Website</th><td>' . $customer['website'] . '</td></tr>';
 						echo '<tr><th>Facebook</th><td>' . $customer['facebook'] . '</td></tr>';
 						echo '<tr><th>Twitter</th><td>' . $customer['twitter'] . '</td></tr>';
-						echo '<tr><th>Gender</th><td>' . $customer['gender'] . '</td></tr>';
+						echo '<tr><th>Gender</th><td>';
+						if($customer['gender']==1) echo 'Male';
+							else if($customer['gender']==2) echo 'Female';
+								else  echo 'Not Specified';
+						echo '</td></tr>';
 					}
 					?>
 					</table>

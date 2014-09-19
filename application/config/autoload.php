@@ -113,6 +113,8 @@ $autoload['model'] = array(
 	'user',			// loads all users
 	'customer',		// loads all customers
 	'company',		// loads all customers
+	'notes',		// loads all notes
+	'events',		// loads all events
 	);
 
 

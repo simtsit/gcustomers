@@ -19,19 +19,19 @@ $this->db->where('end_date', $end_date);
 return $this->db->get('events')->result_array();
 }
 
-public function get_notes_by_company_id($companyid){
+public function get_events_by_company_id($companyid){
 $this->db->where(array('active'=>1));
 $this->db->where('company_id', $companyid);
 return $this->db->get('events')->result_array();
 }
 
-public function get_notes_by_customer_id($custoemid){
+public function get_events_by_customer_id($custoemid){
 $this->db->where(array('active'=>1));
 $this->db->where('customer_id',$customerid);
 return $this->db->get('events')->result_array();
 }
 
-public function add_notes_to_company($notesinfo) {
+public function add_event($eventinfo) {
 $this->load->database();
 $eventdetails = array(
 'company_id' => $eventinfo['company_id'],
